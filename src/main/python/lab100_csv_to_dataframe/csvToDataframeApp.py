@@ -2,6 +2,9 @@
 CsvToDataframeApp.py - CSV ingestion in a dataframe.
 @author rambabu.posa
 """
+import findspark
+findspark.init()
+
 from pyspark.sql import SparkSession
 import os
 
