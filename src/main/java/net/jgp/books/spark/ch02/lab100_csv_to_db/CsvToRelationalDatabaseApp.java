@@ -12,14 +12,14 @@ import org.apache.spark.sql.SparkSession;
 
 /**
  * CSV to a relational database.
- * 
+ *
  * @author jgp
  */
 public class CsvToRelationalDatabaseApp {
 
   /**
    * main() is your entry point to the application.
-   * 
+   *
    * @param args
    */
   public static void main(String[] args) {
@@ -68,8 +68,8 @@ public class CsvToRelationalDatabaseApp {
     // pom.xml
     Properties prop = new Properties();
     prop.setProperty("driver", "org.postgresql.Driver");
-    prop.setProperty("user", "jgp");
-    prop.setProperty("password", "Spark<3Java");
+    prop.setProperty("user", "postgres");
+    prop.setProperty("password", "password");
 
     // Write in a table called ch02
     df.write()
